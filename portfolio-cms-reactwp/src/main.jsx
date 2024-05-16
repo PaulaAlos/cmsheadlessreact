@@ -6,16 +6,13 @@ import './index.css';
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <div>holi desde main</div>
-
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 )
 
 
 /*
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-  
 MAIN.JS / INDICE.JS ORIGINAL:
 
 ReactDOM.createRoot(document.getElementById('root')).render(
