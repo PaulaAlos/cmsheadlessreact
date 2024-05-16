@@ -1,0 +1,320 @@
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    background-color: var(--main-color);
+    color: var(--light-color);   
+}
+
+.contact-container-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: absolute;
+    width: 90%;
+    max-width: 1200px;
+    height: 100%;
+}
+
+.contact-titles-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: fit-content;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    top: 15vh;
+   /* padding-top: 10%;*/
+}
+.contact-title{    
+    text-transform: uppercase;
+}
+
+.contact-subtitle{
+    color: var(--secondary-color);
+}
+
+.contact-wrap{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-svg-wrap{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.contact-svg{
+    width: 100%;
+    height: 100%;
+}
+
+.form-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%;
+    height: 50%;
+    z-index: 10;
+    max-width: 600px;
+}
+
+.contact-text-wrap{
+    width: 50%;
+}
+
+
+.form-label{
+    width: 100%;
+    text-align: start;
+    font-size: 1.5em;
+}
+
+.form-input{
+    width: 98%;
+    background-color: transparent;
+    text-align: start;
+    border: 2px solid var(--secondary-color);
+    font-size: 1.2em;
+}
+
+.form-input:focus{
+    background-color: var(--gray-color);
+
+    outline: none;
+}
+
+.form-textarea{
+    width: 98%;
+    height: 33%;
+    background-color: transparent;
+    text-align: start;
+    border: none;
+    outline: none;
+    border: 2px solid var(--secondary-color);
+    font-size: 1.2em;
+}
+
+.form-textarea:focus{
+    background-color: var(--gray-color);
+}
+
+.form-btn{
+    background-color: var(--dark-color);
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 2em;
+    color: var(--tertiary-color);
+    cursor: pointer;
+    font-size: 1.3em;
+    /*padding: 0.5em;*/
+    font-family: 'Montserrat-Bold';
+}
+
+#contact-svg-group{
+    transform: translate(-15%, 10%);
+}
+
+@media only screen and (max-width: 1300px) {
+    .contact-svg-wrap{
+        padding-left: 1%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #contact-svg-group{
+        transform: translate(-5%, 10%);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #contact-svg-group{
+        transform: translate(0%, 10%);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .contact-wrap{
+        align-items: flex-end;
+    }
+    .contact-titles-wrap{
+        top: 5vh;
+    }
+    #contact-svg-group{
+        transform: translate(33%, -15%);
+    }
+    .form-wrap{
+        position: relative;
+        bottom: 5%;
+        width: 92%;
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .contact-subtitle{
+        text-align: end;
+    }
+}
+
+
+/* ----------- svg email ----------- */
+
+.contact-text-svg{
+    font-size: 3.5em;
+    color: var(--dark-color);
+    opacity: 0;
+}
+
+.animMensaje{
+    -webkit-animation: contact-text-svg var(--time-fast-animation) 1 ease-in;
+    -moz-animation: contact-text-svg var(--time-fast-animation) 1 ease-in;
+    -ms-animation: contact-text-svg var(--time-fast-animation) 1 ease-in;
+    -o-animation: contact-text-svg var(--time-fast-animation) 1 ease-in;
+    animation:  contact-text-svg var(--time-fast-animation) 1 ease-in;
+    
+}
+
+@keyframes contact-text-svg {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.circle-svg{
+    fill: var(--secondary-color);
+}
+
+.animCircleShadow{
+    -webkit-animation: circle-shadow var(--time-fast-animation) 1 ease-in;
+    -moz-animation: circle-shadow var(--time-fast-animation) 1 ease-in;
+    -ms-animation: circle-shadow var(--time-fast-animation) 1 ease-in;
+    -o-animation: circle-shadow var(--time-fast-animation) 1 ease-in;
+    animation:  circle-shadow var(--time-fast-animation) 1 ease-in;
+    fill: var(--secondary-color);
+}
+
+@keyframes circle-shadow {
+    0% {
+        fill: var(--light-color);
+        transform: translate(100%, 0%);
+    }
+    100% {
+        fill: var(--secondary-color);
+        transform: translate(0%, 0%);
+    }
+}
+
+.letter-shadow{
+    fill: var(--dark-color);
+}
+
+.animLetterShadow{
+    -webkit-animation: letter-shadow var(--time-normal-animation) 1 ease-in;
+    -moz-animation: letter-shadow var(--time-normal-animation) 1 ease-in;
+    -ms-animation: letter-shadow var(--time-normal-animation) 1 ease-in;
+    -o-animation: letter-shadow var(--time-normal-animation) 1 ease-in;
+    animation:  letter-shadow var(--time-normal-animation) 1 ease-in;
+}
+
+@keyframes letter-shadow {
+    0% {
+        fill: transparent;
+    }
+    66% {
+        fill: transparent;
+    }
+    100% {
+        fill: var(--dark-color);
+    }
+}
+
+.contact-linias-carta{
+    fill: var(--tertiary-color);
+}
+
+.animLetterLinias{
+    -webkit-animation: letter-linias var(--time-normal-animation) 1 ease-in;
+    -moz-animation: letter-linias var(--time-normal-animation) 1 ease-in;
+    -ms-animation: letter-linias var(--time-normal-animation) 1 ease-in;
+    -o-animation: letter-linias var(--time-normal-animation) 1 ease-in;
+    animation:  letter-linias var(--time-normal-animation) 1 ease-in;
+    
+}
+
+@keyframes letter-linias {
+    0% {
+        fill: var(--main-color);
+    }
+    100% {
+        fill: var(--tertiary-color);
+    }
+}
+
+.carta{
+    transform: translate(0%, 0%);
+}
+
+.animShadowExit{
+    -webkit-animation: letter-exit var(--time-normal-animation) 1 ease-in;
+    -moz-animation: letter-exit var(--time-normal-animation) 1 ease-in;
+    -ms-animation: letter-exit var(--time-normal-animation) 1 ease-in;
+    -o-animation: letter-exit var(--time-normal-animation) 1 ease-in;
+    animation:  letter-exit var(--time-normal-animation) 1 ease-in;
+
+    fill: var(--contrast-color);
+}
+
+@keyframes letter-exit {
+    0% {
+        fill: var(--dark-color);
+    }
+    100% {
+        fill: var(--contrast-color);
+    }
+}
+
+.animLetterExit{
+    -webkit-animation: letter-exit2 var(--time-normal-animation) 1 ease-in;
+    -moz-animation: letter-exit2 var(--time-normal-animation) 1 ease-in;
+    -ms-animation: letter-exit2 var(--time-normal-animation) 1 ease-in;
+    -o-animation: letter-exit2 var(--time-normal-animation) 1 ease-in;
+    animation:  letter-exit2 var(--time-normal-animation) 1 ease-in;
+    fill: var(--light-color);
+}
+
+@keyframes letter-exit2 {
+    0% {
+        fill: var(--tertiary-color);
+    }
+    50% {
+        fill: var(--main-color);
+    }
+    100% {
+        fill: var(--light-color);
+    }
+}

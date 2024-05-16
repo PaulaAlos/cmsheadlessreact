@@ -1,0 +1,202 @@
+.intro-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    min-height: fit-content;
+   /* background-color: var(--main-color);*/
+}
+
+.svgBackground-intro-container{
+    position: relative;
+    width: 100%;
+    height: 100% ;
+    z-index: 0;
+    top: 0;
+    left: 0; 
+    overflow: hidden;
+}
+
+.intro-title{
+    color: var(--dark-color);
+}
+
+.intro-text-wrap{
+    position: absolute;
+    max-width: 600px;
+    width: 80vw;
+    color: var(--main-color);
+    transform-origin: 50% 50%;
+ 
+}
+@media only screen and (max-width: 400px) {
+    .intro-text-wrap{
+        width: 95vw;
+    }
+}
+
+.animIntroText{
+    -webkit-animation: intro-text var(--time-fast-animation) 1 ease-in;
+    -moz-animation: intro-text var(--time-fast-animation) 1 ease-in;
+    -ms-animation: intro-text var(--time-fast-animation) 1 ease-in;
+    -o-animation: intro-text var(--time-fast-animation) 1 ease-in;
+    animation:  intro-text var(--time-fast-animation) 1 ease-in;
+    color: var(--dark-color);
+}
+
+@keyframes intro-text {
+    0% {
+        color: var(--main-color);
+    }
+    100% {
+        color: var(--dark-color);
+    }
+}
+
+.intro-desc p{    
+    text-align: start;
+    margin-bottom: 30px;
+}  
+
+.introLine{
+    stroke-width: 4px;
+    transform: scaleY(0);
+    opacity: 0;
+    stroke: var(--base-color); 
+    transition: transform 3s, opacity 0.var(--time-fast-animation); 
+    transform-origin: 50% 50%;
+}
+
+.introCircle2{
+    fill: var(--secondary-color)
+}
+
+.introCircle1{
+    fill: var(--light-color);   
+    transform: scale(1) translate(0%, 0%);
+    transform-origin: '50% 50%';
+}
+
+.animIntroCircle1 {
+    -webkit-animation: intro-circle-1 var(--time-normal-animation) 1 ease-in-out;
+    -moz-animation: intro-circle-1 var(--time-normal-animation) 1 ease-in-out;
+    -ms-animation: intro-circle-1 var(--time-normal-animation) 1 ease-in-out;
+    -o-animation: intro-circle-1 var(--time-normal-animation) 1 ease-in-out;
+    animation: intro-circle-1 var(--time-normal-animation) 1 ease-in-out;
+    z-index: 1;
+    transform: translateY(0%);
+    fill: var(--light-color);
+}
+
+@keyframes intro-circle-1 {
+    0% {
+        fill: var(--main-color);
+        transform: translateY(-100%);
+    }
+    100% {
+        fill: var(--light-color);
+        transform: translateY(0%);
+    }
+}
+
+.animIntroCircle1b {
+    -webkit-animation: intro-circle-1b var(--time-normal-animation) 1 ease-in-out;
+    -moz-animation: intro-circle-1b var(--time-normal-animation) 1 ease-in-out;
+    -ms-animation: intro-circle-1b var(--time-normal-animation) 1 ease-in-out;
+    -o-animation: intro-circle-1b var(--time-normal-animation) 1 ease-in-out;
+    animation: intro-circle-1b var(--time-normal-animation) 1 ease-in-out;
+    z-index: 1;
+    fill: var(--light-color);
+    transform: scale(1) translate(0%, 0%);
+}
+
+@keyframes intro-circle-1b {
+    0% {
+        opacity: 0.9;
+        fill: var(--light-color);
+        transform: scale(0) translate(0%, 500%);
+    }
+    33% {
+        opacity: 0.9;
+        fill: var(--main-color);
+        transform: scale(0.1) translate(100%, 300%);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translate(0%, 0%);
+        fill: var(--light-color);
+    }
+}
+  
+.introCircle3{
+    fill: var(--tertiary-color);
+    transform: scale(1);
+    transform-origin: 50% 0%;
+    transform: scale(1) translateX(0%) translateY(-250%);
+}
+
+.animIntroCircle3 {
+    -webkit-animation: intro-circle-3 var(--time-normal-animation) 1 ease-in-out;
+    -moz-animation: intro-circle-3 var(--time-normal-animation) 1 ease-in-out;
+    -ms-animation: intro-circle-3 var(--time-normal-animation) 1 ease-in-out;
+    -o-animation: intro-circle-3 var(--time-normal-animation) 1 ease-in-out;
+    animation: intro-circle-3 var(--time-normal-animation) 1 ease-in-out;
+    /*animation-iteration-count: infinite;*/
+    z-index: 1;
+    fill: var(--tertiary-color);
+    transform: scale(1) translateX(0%) translateY(0%);
+}
+
+@keyframes intro-circle-3 {
+
+    0% {
+        -webkit-transform: scale(0) translateX(0%) translateY(-250%);
+        -moz-transform: scale(0) translateX(0%) translateY(-100%);
+        -ms-transform: scale(0) translateX(0%) translateY(-100%);
+        -o-transform: scale(0) translateX(0%) translateY(-100%);
+        transform: scale(0) translateX(0%) translateY(-250%);
+        fill: var(--white-color);
+    }
+    100% {
+        -webkit-transform: scale(1) translateX(0%) translateY(-0%);
+        -moz-transform: scale(1) translateX(0%) translateY(-0%);
+        -ms-transform: scale(1) translateX(0%) translateY(-0%);
+        -o-transform: scale(1) translateX(0%) translateY(-0%);
+        transform: scale(1) translateX(0%) translateY(-0%);
+        fill: var(--tertiary-color);
+    }
+}
+
+.animIntroCircle3b{
+    -webkit-animation: intro-circle-3b var(--time-fast-animation) 1 ease-in-out;
+    -moz-animation: intro-circle-3b var(--time-fast-animation) 1 ease-in-out;
+    -ms-animation: intro-circle-3b var(--time-fast-animation) 1 ease-in-out;
+    -o-animation: intro-circle-3b var(--time-fast-animation) 1 ease-in-out;
+    animation: intro-circle-3b var(--time-normal-animation) 1 ease-in-out;
+   /* animation-iteration-count: infinite;*/
+    z-index: 1;
+    fill: var(--tertiary-color);
+    transform-origin: 50% 50%;
+    transform: scale(1) translateX(0%) translateY(0%);
+}
+
+@keyframes intro-circle-3b {
+
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(0) translateX(0%) translateY(150%);
+        fill: var(--white-color);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1) translateX(0%) translateY(0%);
+        fill: var(--tertiary-color);
+    }
+}

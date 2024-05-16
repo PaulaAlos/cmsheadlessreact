@@ -1,0 +1,111 @@
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+    min-height: 20vh;
+    min-width: 100vw;
+    background-color: var(--dark-color);
+}
+
+.footer-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}
+
+.footer-info-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 25%;
+    height: 100%;
+    color: var(--white-color);
+}
+
+.footer-copyright{
+    text-align: start;
+}
+
+.footer-links-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+}
+
+.nav-wrap-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    height: 50%;
+    border-left: 1em solid var(--secondary-color);
+    border-right: 1em solid var(--secondary-color);
+
+}
+
+.nav-link-foter{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Montserrat-SemiBold';
+    color: var(--light-color);   
+    text-decoration: none; 
+    width: 100%;
+    height: 100%;
+}
+
+.nav-wrap-footer a{  
+    width: 100%;
+    height: 100%;
+}
+
+.nav-link-foter:hover{
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+}
+
+/*SOCIAL MEDIA*/
+
+.footer-icons-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.footer-icon{
+    width: 3em;
+    height: auto;
+    cursor: pointer;
+    margin-right: 2em;
+}
+.footer-icon:last-child{
+    margin-right: 0em;
+}
+
+.svg-icon{
+    width: 100%;
+    height: 100%;
+    fill: var(--white-color);
+}
+.svg-icon2{
+    fill: var(--dark-color);
+}
+
+.hideIcon{
+    display: none;
+}

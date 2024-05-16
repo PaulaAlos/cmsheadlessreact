@@ -1,0 +1,192 @@
+*{
+  max-width: 100vw;
+
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather-Light', 'Arial', 'Sans';
+}
+
+/* -------------- Variables globales -------------- */
+
+:root {
+  --main-color: #608E81;
+  --main-color-opacity: #608E8190;
+  --secondary-color: #AFBCA4;
+  --tertiary-color: #DAA547;
+  --contrast-color: #A35228;
+  --black-color: #111111;
+  --white-color: #ffffff;
+  --gray-color: #e6e6e6;
+  --dark-color: #283738;
+  --dark-color-opacity: #28373890;
+  --base-color: #CCB293;
+  --light-color: #f6f7f7;
+  --transparent-color: rgba(255,255,255,0);
+  --time-fast-animation: 0.5s;
+  --time-normal-animation: 1s;
+  --time-slow-animation: 2.5s;
+}
+
+
+
+/* -------------- Generales -------------- */
+
+img{
+ 
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0px;
+  height: fit-content;
+  align-items: flex-start;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--light-color);
+}
+
+
+/* -------------- Fuentes -------------- */
+
+h1, h2, h3, h4, h5, h6, p{
+  text-align: start;
+  font-family: 'Merriweather-Bold';
+}
+
+label{
+  font-family: 'Montserrat-SemiBold';
+}
+
+p{
+  text-align: start;
+  font-family: 'Montserrat-Light';
+}
+
+p strong{
+  font-family: 'Montserrat-Bold';
+}
+
+strong{
+  font-family: 'Merriweather-Bold';
+}
+
+.boldItalic{
+  font-family: 'Montserrat-SemiBoldItalic';
+}
+
+button{
+  font-family: 'Montserrat-Regular';
+}
+
+.clamp1{
+  font-size: clamp(4.5rem, -4.5rem + 2vw, 3rem);
+}
+
+.clamp2{
+  font-size: clamp(2rem, -2rem + 7.5vw, 2.5rem);
+}
+
+.clamp3{
+  font-size: clamp(1.7rem, -1.7rem + 4.5vw, 1.5rem);
+}
+
+.clamp4{
+  font-size: clamp(1.4rem, -1.4rem + 2.5vw, 1.2rem);
+}
+
+@media only screen and (max-width: 450px) {
+  .clamp1{
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .clamp1{
+    font-size: 2rem;
+  }
+}
+
+
+
+a{
+  text-decoration: none;
+}
+
+/*PlayfairDisplay*/
+
+@font-face{
+  font-family: 'Montserrat-Regular';
+  src: url('./src/assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face{
+  font-family: 'Montserrat-Bold';
+  src: url('./src/assets/fonts/Montserrat-Bold.ttf');
+}
+
+@font-face{
+  font-family: 'Montserrat-SemiBold';
+  src: url('./src/assets/fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face{
+  font-family: 'Montserrat-Medium';
+  src: url('./src/assets/fonts/Montserrat-Medium.ttf');
+}
+
+@font-face{
+  font-family: 'Montserrat-Light';
+  src: url('./src/assets/fonts/Montserrat-Light.ttf');
+}
+
+@font-face{
+  font-family: 'Montserrat-Italic';
+  src: url('./src/assets/fonts/Montserrat-Italic.ttf');
+}
+
+@font-face{
+  font-family: 'Montserrat-SemiBoldItalic';
+  src: url('./src/assets/fonts/Montserrat-SemiBoldItalic.ttf');
+}
+
+
+
+/*Merriweather*/
+
+@font-face{
+  font-family: 'Merriweather-Regular';
+  src: url('./src/assets/fonts/Merriweather-Regular.ttf');
+}
+
+@font-face{
+  font-family: 'Merriweather-Bold';
+  src: url('./src/assets/fonts/Merriweather-Bold.ttf');
+}
+
+@font-face{
+  font-family: 'Merriweather-SemiBold';
+  src: url('./src/assets/fonts/Merriweather-SemiBold.ttf');
+}
+
+@font-face{
+  font-family: 'Merriweather-Medium';
+  src: url('./src/assets/fonts/Merriweather-Medium.ttf');
+}
+
+@font-face{
+  font-family: 'Merriweather-Light';
+  src: url('./src/assets/fonts/Merriweather-Light.ttf');
+}
+
+@font-face{
+  font-family: 'Merriweather-Italic';
+  src: url('./src/assets/fonts/Merriweather-Italic.ttf');
+}
+
+@font-face{
+  font-family: 'Merriweather-SemiBoldItalic';
+  src: url('./src/assets/fonts/Merriweather-SemiBoldItalic.ttf');
+}
+

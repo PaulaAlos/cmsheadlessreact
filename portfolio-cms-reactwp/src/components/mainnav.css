@@ -1,0 +1,132 @@
+.main-nav{
+    position:absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    min-height: fit-content;
+    padding: 0;
+    background-color: var(--main-color);
+    font-size: 1rem;
+    color: var(--light-color);
+    z-index: 10000000 !important;
+    right: 0;
+}
+
+.nav-title{
+    display: flex;
+    justify-content: flex-start;
+    width: 15%;
+    min-width: fit-content;
+}
+
+.nav-container{
+
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 90vw;
+    height: 100%;
+    max-width: 500px;
+}
+
+.nav-wrap-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}
+
+.nav-menu-icon{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+}
+
+.menu-icon{
+    width: 100%;
+    height: 75%;
+    fill: var(--light-color);
+    cursor: pointer;
+}
+
+.nav-link{
+    font-family: 'Montserrat-SemiBold';
+    color: var(--light-color);   
+    text-decoration: none; 
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    padding: 5px 10px 5px 10px;
+}
+
+.nav-link:hover, .active-link{
+    background-color: var(--dark-color);
+}
+
+/*Colapsed*/
+
+@media only screen and (max-width: 650px) {
+    .nav-container{
+        justify-content: center;
+        align-items: flex-end;
+        max-width: fit-content;
+        padding-right: 6px;
+    }
+
+    .nav-menu-icon{
+        display: flex;      
+    }
+    
+    .nav-wrap-header{
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100vw;
+        min-width: fit-content;
+        height: fit-content;
+        min-height: fit-content;
+        position: absolute;
+        padding: 5px;
+        top: 5vh;
+        right: 0px;
+        background-color: var(--secondary-color);
+        overflow: hidden;
+    }
+
+    .menuOpened{
+        display: flex;
+    }
+
+    .nav-wrap-header a{
+        width: 100%;    
+    }
+
+    .nav-link{
+        display: flex;
+        justify-content: flex-end;
+        width: 95%;
+        align-items: center;
+        text-align: end;
+        border-radius: 0;
+
+    }
+}
+
+
+.nav-logo{
+    height: 100%;
+    width: auto;
+}
+
+.nav-title{
+    color: var(--light-color);   
+    text-decoration: none;
+    width: 10%;
+    padding-left: 1%;
+    font-family: 'Montserrat-Medium';
+}

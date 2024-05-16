@@ -1,0 +1,28 @@
+.svgBackground-container{
+    position: absolute;
+    width: 100vw;
+    height: 120vh ;
+    z-index: 0;
+    top: 0;   
+    left: 0; 
+}
+
+.svg-line{
+    stroke: black;
+    stroke-width: 4px;
+}
+
+#circle-1{
+    transition: transform 2.5s, opacity 0.5s;
+
+}
+
+.circle-animation{
+    transform-origin: 50% 50%;
+    transform: translateY(150px)
+}
+
+.line-animation{
+    transform: scaleY(0.5);
+    transform-origin: 50% 100%;
+}
